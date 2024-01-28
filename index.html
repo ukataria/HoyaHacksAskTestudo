@@ -13,7 +13,7 @@
             position: relative;
             display: flex;
             justify-content: center;
-            background-image: url('md-flag-1920.webp');
+            background-image: url('public/md-flag-1920.webp');
             background-size: cover;
             background-repeat: no-repeat;
             align-items: center;
@@ -178,7 +178,7 @@
 </head>
 <body>
     
-    <img src="testudo-gif-2.gif" alt="Centered GIF">
+    <img src="public/testudo-gif-2.gif" alt="Centered GIF">
 
     <div id="titleBox">askTestudo&#8482</div>
     <div id="animated-face"></div>
@@ -207,14 +207,14 @@
 
     <div id="audioContainer">
         <audio id="audio" controls>
-            <source src="./MarylandVictorySong.mov" type="audio/mp3">
+            <source src="public/MarylandVictorySong.mov" type="audio/mp3">
         </audio>
         <button id="audioButton" class="audio-button" onclick="toggleAudio()">Roll Terps!</button>
     </div>
 
     <script> 
         // Initialize the audio element with the source
-        const audio = new Audio('./MarylandVictorySong.mov');
+        const audio = new Audio('public/MarylandVictorySong.mov');
     
         function drag(ev) {
             ev.dataTransfer.setData("text/plain", ""); // Necessary for Firefox
